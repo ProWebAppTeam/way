@@ -1,0 +1,244 @@
+.popover {
+  position: absolute;
+  top: -5px;
+  left: 0 #{"/* rtl:ignore */"};
+  z-index: $zindex-popover;
+  display: block;
+  max-width: $popover-max-width;
+  min-width: 125px;
+  // Our parent element can be arbitrary since tooltips are by default inserted as a sibling of their target element.
+  // So reset our font and text properties to avoid inheriting weird values.
+  @include reset-text();
+  @include font-size($popover-font-size);
+  // Allow breaking very long words so they don't overflow the popover's bounds
+  word-wrap: break-word;
+  background-color: $popover-bg;
+  background-clip: padding-box;
+  border-top: $popover-border-width solid $black;
+  @include border-radius($popover-border-radius);
+  @include box-shadow($popover-box-shadow);
+
+
+}
+
+.popover.customPopoverblack,
+.popover.customPopoverwhite,
+.popover.bs-popover-bottom:not(.ccm-edit-mode-block-menu) {
+  top: -5px !important;
+}
+
+
+.popover-arrow {
+  position: absolute;
+  display: block;
+  width: $popover-arrow-width;
+  height: $popover-arrow-height;
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+
+.customPopoverblack,
+.customPopoverwhite {
+  margin: -5px 0 0 0 !important;
+}
+
+.customPopoverwhite {
+  border-top: none;
+}
+
+.customPopoverblack {
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.3));
+}
+.popover.bs-popover-bottom.customContactPopover {
+  top: 30px !important;
+  left: 50% !important;
+  transform: translate(-50%, 0) !important;
+  max-width: fit-content;
+}
+
+.customPopoverwhite.bs-popover-bottom {
+  >.popover-arrow {
+    top: subtract(-$popover-arrow-height, $popover-border-width);
+
+    &::before {
+      top: 0;
+      border-width: 0 7px 7px 7px;
+      border-bottom-color: rgba(255, 255, 255, 0.178);
+    }
+
+    &::after {
+      top: 0;
+      border-width: 0 7px 7px 7px;
+      border-bottom-color: white;
+    }
+  }
+}
+
+.customPopoverblack.bs-popover-bottom {
+  >.popover-arrow {
+    top: -7px;
+
+
+    &::before {
+      top: 0;
+      border-width: 0 7px 7px 7px;
+    }
+
+    &::after {
+      top: 0;
+      border-width: 0 7px 7px 7px;
+    }
+  }
+}
+
+.customContactPopover.bs-popover-bottom {
+  >.popover-arrow {
+    top: subtract(-$popover-arrow-height, $popover-border-width);
+
+    &::before {
+      top: 0;
+      border-width: 0;
+      border-bottom-color: rgba(255, 255, 255, 0.178);
+    }
+
+    &::after {
+      top: 0;
+      border-width: 0;
+      border-bottom-color: white;
+    }
+  }
+}
+
+
+.bs-popover-top {
+  >.popover-arrow {
+    bottom: subtract(-$popover-arrow-height, $popover-border-width);
+
+    &::before {
+      bottom: 0;
+      border-width: $popover-arrow-height ($popover-arrow-width * .5) 0;
+      border-top-color: $popover-arrow-outer-color;
+    }
+
+    &::after {
+      bottom: $popover-border-width;
+      border-width: $popover-arrow-height ($popover-arrow-width * .5) 0;
+      border-top-color: $popover-arrow-color;
+    }
+  }
+}
+
+.bs-popover-end {
+  >.popover-arrow {
+    left: subtract(-$popover-arrow-height, $popover-border-width);
+    width: $popover-arrow-height;
+    height: $popover-arrow-width;
+
+    &::before {
+      left: 0;
+      border-width: ($popover-arrow-width * .5) $popover-arrow-height ($popover-arrow-width * .5) 0;
+      border-right-color: $popover-arrow-outer-color;
+    }
+
+    &::after {
+      left: $popover-border-width;
+      border-width: ($popover-arrow-width * .5) $popover-arrow-height ($popover-arrow-width * .5) 0;
+      border-right-color: $popover-arrow-color;
+    }
+  }
+}
+
+.bs-popover-bottom {
+  >.popover-arrow {
+    top: subtract(-$popover-arrow-height, $popover-border-width);
+
+    &::before {
+      top: 0;
+      border-width: 0 ($popover-arrow-width * .5) $popover-arrow-height ($popover-arrow-width * .5);
+      border-bottom-color: $popover-arrow-outer-color;
+    }
+
+    &::after {
+      top: $popover-border-width;
+      border-width: 0 ($popover-arrow-width * .5) $popover-arrow-height ($popover-arrow-width * .5);
+      border-bottom-color: $popover-arrow-color;
+    }
+  }
+
+  // This will remove the popover-header's border just below the arrow
+  .popover-header::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: $popover-arrow-width;
+    margin-left: -$popover-arrow-width * .5;
+    content: "";
+    border-bottom: $popover-border-width solid $popover-header-bg;
+  }
+}
+
+.bs-popover-start {
+  >.popover-arrow {
+    right: subtract(-$popover-arrow-height, $popover-border-width);
+    width: $popover-arrow-height;
+    height: $popover-arrow-width;
+
+    &::before {
+      right: 0;
+      border-width: ($popover-arrow-width * .5) 0 ($popover-arrow-width * .5) $popover-arrow-height;
+      border-left-color: $popover-arrow-outer-color;
+    }
+
+    &::after {
+      right: $popover-border-width;
+      border-width: ($popover-arrow-width * .5) 0 ($popover-arrow-width * .5) $popover-arrow-height;
+      border-left-color: $popover-arrow-color;
+    }
+  }
+}
+
+.bs-popover-auto {
+  &[data-popper-placement^="top"] {
+    @extend .bs-popover-top;
+  }
+
+  &[data-popper-placement^="right"] {
+    @extend .bs-popover-end;
+  }
+
+  &[data-popper-placement^="bottom"] {
+    @extend .bs-popover-bottom;
+  }
+
+  &[data-popper-placement^="left"] {
+    @extend .bs-popover-start;
+  }
+}
+
+// Offset the popover to account for the popover arrow
+.popover-header {
+  padding: $popover-header-padding-y $popover-header-padding-x;
+  margin-bottom: 0; // Reset the default from Reboot
+  @include font-size($font-size-base);
+  color: $popover-header-color;
+  background-color: $popover-header-bg;
+  border-bottom: $popover-border-width solid $popover-border-color;
+  @include border-top-radius($popover-inner-border-radius);
+
+  &:empty {
+    display: none;
+  }
+}
+
+.popover-body {
+  padding: $popover-body-padding-y $popover-body-padding-x;
+  color: $popover-body-color;
+}
