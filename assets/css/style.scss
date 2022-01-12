@@ -1,19 +1,19 @@
 @font-face {
     font-family: Helvetica;
     font-weight: 400;
-    src: url("../assets/fonts/HelveticaLight.otf") format("opentype");
+    src: url("./fonts/HelveticaLight.otf") format("opentype");
 }
 
 @font-face {
     font-family: Helvetica;
     font-weight: 700;
-    src: url("../assets/fonts/HelveticaBold.otf") format("opentype");
+    src: url("./fonts/HelveticaBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "DrukTextWide";
     font-weight: 600;
-    src: url("../assets/fonts/DrukTextWideCyMedium.otf") format("opentype");
+    src: url("./fonts/DrukTextWideCyMedium.otf") format("opentype");
 }
 
 @import "./variables";
