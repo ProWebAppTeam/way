@@ -11,22 +11,21 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'way_u_choose' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'way_u_choose' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'way_u_choose' ), 'way_u_choose', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer>
+        <div class="container-fluid footer-container">
+            <div class="row footer-row-links">
+                <div class="col-auto"><a href="">FAQ</a></div>
+                <div class="col-auto"><a href="">Политика конфиденциальности</a></div>
+                <div class="col-auto"><a href="">Публичная оферта</a></div>
+                <div class="col-auto"><a href="">Instagram</a></div>
+
+
+            </div>
+            <div class="row footer-row-copyrites">
+                <p>© 2021 WAYYOUCHOOSE. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+</footer>
 
 <?php wp_footer(); ?>
 

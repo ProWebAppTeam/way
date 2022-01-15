@@ -22,38 +22,42 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'way_u_choose' ); ?></a>
+	<header class="main-header">
+        <div class="top-row row desktop-top">
+            <div class="top-row_logo col-auto">
+                <img src="<?php 
+                    $logo = get_theme_mod( 'custom_logo' );
+                	$image = wp_get_attachment_image_src( $logo , 'full' );
+                	$image_url = $image[0];
+                    echo($image_url) ?>" alt="logo">
+            </div>
+            <?php 
+                    $home_url = site_url() . "/wp-content/themes/WayTheme/assets";
+            ?>
+            <div class="top-row_right-block col-auto">
+                <div class="top-row_right-block_search">
+                    <div class="input-group">
+                        <span class="input-group-append">
+                            <button class="btn" type="button">
+                                <img src="<?php echo $home_url, "/image/icon/Find_icon.svg" ?>" alt="">
+                            </button>
+                        </span>
+                        <input class="form-control " type="search" value="" placeholder="Найти..."
+                            id="example-search-input">
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$way_u_choose_description = get_bloginfo( 'description', 'display' );
-			if ( $way_u_choose_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $way_u_choose_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+                    </div>
+                </div>
+                <a href="#" class="header-link like-link"><img src="<?php echo $home_url, "/image/icon/like_icon.svg" ?>" alt=""></a>
+                <a href="#" class="header-link store-link"><img src="<?php echo $home_url, "/image/icon/store_icon.svg" ?>" alt=""></a>
+                <a href="#" class="header-link account-link"><img src=<?php echo $home_url,"/image/icon/people_icon.svg" ?>" alt=""></a>
+            </div>
+        </div>
+        <div class="top-row-menu">
+            <?php
+                wp_nav_menu([
+                    'items_wrap'      => '<ul id="%1$s" class="top-row-menu">%3$s</ul>',
+                    ]); 
+            ?>
+        </div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'way_u_choose' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    </header>

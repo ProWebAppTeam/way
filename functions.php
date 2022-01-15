@@ -12,6 +12,12 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+
+require get_template_directory() . '/includes/custom-fields-options/theme-options.php';
+require get_template_directory() . '/includes/custom-fields-options/metabox.php';
+
+
+
 /*
 Theme settings added
 */
@@ -62,3 +68,4 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
 }
+
