@@ -53,6 +53,8 @@ require get_template_directory() . '/includes/template-functions.php';
  */
 require get_template_directory() . '/includes/customizer.php';
 
+require get_template_directory() . '/includes/navigations.php';
+
 /**
  * Load Jetpack compatibility file.
  */
@@ -67,5 +69,22 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/includes/woocommerce.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions.php';
 	require get_template_directory() . '/woocommerce/includes/wc-functions-remove.php';
+	require get_template_directory() . '/woocommerce/includes/wc_functions_cart.php';
+	require get_template_directory() . '/woocommerce/includes/wc_functions_single.php';
+	require get_template_directory() . '/woocommerce/includes/wc_functions_archive.php';
+	require get_template_directory() . '/woocommerce/includes/wc_functions_archive_loop_product.php';
+	require get_template_directory() . '/woocommerce/includes/wc_functions_checkout.php';
+	require get_template_directory() . '/woocommerce/includes/wc-functions-account.php';
 }
 
+
+
+add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+
+function special_nav_class($classes, $item)
+{
+    if (in_array('current-menu-item', $classes)) {
+        $classes[] = 'active ';
+    }
+    return $classes;
+}

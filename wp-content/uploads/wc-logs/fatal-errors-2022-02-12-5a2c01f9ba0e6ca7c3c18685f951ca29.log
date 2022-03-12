@@ -1,2 +1,0 @@
-2022-02-12T20:45:30+00:00 CRITICAL require(): Failed opening required 'content-widget-price-filter.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions_archive.php на строке 75
-

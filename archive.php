@@ -10,9 +10,22 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
+	<div class="wrap-block">
+     <div class="container df">
+       <?php get_template_part("template-parts/aside")?>
+       <main>
+         <div class="content-header">
+           <div class="container">
+             <div class="main-block">
+                 <p>archive</p>
+                 <?php yoast_breadcrumb( '<div class="breadcrumbs">','</div>' );?>
+             </div>
+           </div>
+         </div>
+         <section class="content-block">
+           <div class="container">
+             <h1 class="title"><?php get_the_title(); ?></h1>
+            	<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
 				<?php
@@ -43,9 +56,14 @@ get_header();
 
 		endif;
 		?>
+		
+           </div>
+         </section>
+       </main>
+     </div>
+   </div>
 
-	</main><!-- #main -->
+
 
 <?php
-get_sidebar();
 get_footer();

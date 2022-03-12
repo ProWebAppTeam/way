@@ -11,21 +11,17 @@
 
 ?>
 
-<footer>
-        <div class="container-fluid footer-container">
-            <div class="row footer-row-links">
-                <div class="col-auto"><a href="">FAQ</a></div>
-                <div class="col-auto"><a href="">Политика конфиденциальности</a></div>
-                <div class="col-auto"><a href="">Публичная оферта</a></div>
-                <div class="col-auto"><a href="">Instagram</a></div>
-
-
-            </div>
-            <div class="row footer-row-copyrites">
-                <p>© 2021 WAYYOUCHOOSE. ALL RIGHTS RESERVED.</p>
-            </div>
-        </div>
-</footer>
+  <footer>
+       <div class="container">
+            <ul>
+                <li><a href="https://wayuchoose.com/faq/">FAQ</a></li>
+                <li><a href="<?php echo carbon_get_theme_option('way_politics')?>">Политика конфиденциальности</a></li>
+                <li><a href="<?php echo carbon_get_theme_option('way_ofert')?>">Публичная оферта</a></li>
+                <li><a href="<?php echo carbon_get_theme_option('way_inst')?>">Instagram</a></li>
+            </ul>
+            <div class="copyright"><?php echo carbon_get_theme_option('way_copyrite')?></div>
+       </div>
+   </footer>
 
 <?php wp_footer(); ?>
 

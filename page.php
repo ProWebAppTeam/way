@@ -14,10 +14,22 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
-		<?php
+	<div class="wrap-block">
+     <div class="container df">
+       <?php get_template_part("template-parts/aside")?>
+       <main>
+         <div class="content-header">
+           <div class="container">
+             <div class="main-block">
+                 <?php yoast_breadcrumb( '<div class="breadcrumbs">','</div>' );?>
+             </div>
+           </div>
+         </div>
+         <section class="content-block">
+           <div class="container">
+             <h1 class="title"><?php get_the_title(); ?></h1>
+             
+             <?php
 		while ( have_posts() ) :
 			the_post();
 
@@ -30,9 +42,12 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
-	</main><!-- #main -->
+           </div>
+         </section>
+       </main>
+     </div>
+   </div>
 
 <?php
-get_sidebar();
-get_footer();
+get_footer(); 
+?>

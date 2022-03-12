@@ -16,8 +16,10 @@ function crb_attach_theme_options() {
         Field::make( 'image', 'third_main_carousel_image', __( 'Third carosel image' ) ),
 	) )
 	->add_tab( 'Подвал', array(
-		Field::make( 'text', 'way_email', 'Notification Email' ),
-		Field::make( 'text', 'way_phone', 'Phone Number' )
+		Field::make( 'text', 'way_copyrite', 'Copyrite' ),
+		Field::make( 'text', 'way_phone', 'Phone Number' ),
+		Field::make( 'text', 'way_politics', 'Политика конфиденциальности' ),
+		Field::make( 'text', 'way_ofert', 'Публичная оферта' )
 	) )
 	->add_tab( 'Соц сети', array(
 		Field::make( 'text', 'way_inst', 'Instagram' ),

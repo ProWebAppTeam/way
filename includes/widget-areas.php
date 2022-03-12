@@ -14,10 +14,29 @@ function way_u_choose_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', 'way_u_choose' ),
 			'id'            => 'sidebar-1',
 			'description'   => esc_html__( 'Add widgets here.', 'way_u_choose' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '',
+			'after_title'   => '',
+			'before_sidebar' => '', // WP 5.6
+			'after_sidebar'  => '',
+			'description'   => '',
+			'class'         => '',
+		)
+	);
+		register_sidebar(
+		array(
+			'name'          => esc_html__( 'For Price filter', 'way_u_choose' ),
+			'id'            => 'sidebar-2',
+			'description'   => esc_html__( 'Add widgets here.', 'way_u_choose' ),
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '',
+			'after_title'   => '',
+			'before_sidebar' => '', // WP 5.6
+			'after_sidebar'  => '',
+			'description'   => '',
+			'class'         => '',
 		)
 	);
 }

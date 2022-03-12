@@ -10,20 +10,30 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title">
+	<div class="wrap-block">
+     <div class="container df">
+       <?php get_template_part("template-parts/aside")?>
+       <main>
+         <div class="content-header">
+           <div class="container">
+             <div class="main-block">
+               <div class="breadcrumbs">
+                 <a href="index.php">Главная</a> / <span>Поиск</span>
+               </div>
+             </div>
+           </div>
+         </div>
+         <section class="content-block">
+           <div class="container">
+        <?php if ( have_posts() ) : ?>
+             <h1 class="page-title">
 					<?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Search Results for: %s', 'way_u_choose' ), '<span>' . get_search_query() . '</span>' );
 					?>
-				</h1>
-			</header><!-- .page-header -->
-
-			<?php
+			</h1>
+             
+            <?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -45,9 +55,14 @@ get_header();
 
 		endif;
 		?>
+           </div>
+         </section>
+       </main>
+     </div>
+   </div>
 
-	</main><!-- #main -->
+
+
 
 <?php
-get_sidebar();
 get_footer();
