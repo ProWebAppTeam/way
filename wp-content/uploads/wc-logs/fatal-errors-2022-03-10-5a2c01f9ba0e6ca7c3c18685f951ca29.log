@@ -1,0 +1,6 @@
+2022-03-10T20:26:14+00:00 CRITICAL Cannot redeclare register_collection_post_type() (previously declared in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/includes/template-functions.php:14) в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/includes/template-functions.php на строке 83
+
+2022-03-10T20:26:15+00:00 CRITICAL Cannot redeclare register_collection_post_type() (previously declared in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/includes/template-functions.php:14) в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/includes/template-functions.php на строке 83
+
+2022-03-10T20:26:15+00:00 CRITICAL Cannot redeclare register_collection_post_type() (previously declared in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/includes/template-functions.php:14) в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/includes/template-functions.php на строке 83
+

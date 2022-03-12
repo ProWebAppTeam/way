@@ -1,0 +1,34 @@
+$font-family-sans-serif: Helvetica,
+'DrukTextWild',
+-apple-system,
+system-ui,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif;
+
+$main-gray: #F0F0F0;
+$main-text: #60676B;
+$main-text-light: #A5A5A5;
+$main-light2: #B4B4B4;
+
+$blue: #8CC7EC;
+
+$primary: $main-gray;
+
+$link-color: $main-text;
+$link-decoration: none;
+$link-shade-percentage: 40%;
+$link-hover-color: darken($link-color, $link-shade-percentage);
+
+.form-control:focus {
+    
+    box-shadow: none !important;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none !important;
+}

@@ -1,0 +1,197 @@
+2022-02-27T09:19:39+00:00 CRITICAL Uncaught Error: Call to undefined function way_woocommerce_account_orders() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php:41
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#2 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#3 [internal function]: WC_Shortcode_My_Account::output('')
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): call_user_func(Array, '')
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(115): WC_Shortcodes::sh в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php на строке 41
+
+2022-02-27T09:20:12+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function way_woocommerce_account_orders(), 0 passed in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php on line 41 and exactly 1 expected in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc-functions-account.php:87
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php(41): way_woocommerce_account_orders()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/m/manufae...')
+#2 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc-functions-account.php на строке 87
+
+2022-02-27T11:38:37+00:00 CRITICAL Uncaught Error: Object of class stdClass could not be converted to string in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc-functions-account.php:97
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php(41): way_woocommerce_account_orders(1)
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/home/m/manufae...')
+#2 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#4 [internal function]: WC_Shortcode_My_Account::output('')
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-sho в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc-functions-account.php на строке 97
+
+2022-02-27T17:27:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_status() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:78
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_action('w в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 78
+
+2022-02-27T17:27:32+00:00 CRITICAL Uncaught Error: Call to undefined function get_status() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:78
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_action('w в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 78
+
+2022-02-27T17:28:15+00:00 CRITICAL Uncaught Error: Call to undefined function get_status() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:78
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_action('w в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 78
+
+2022-02-27T17:28:18+00:00 CRITICAL Uncaught Error: Call to undefined function get_status() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:78
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_action('w в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 78
+
+2022-02-27T17:56:04+00:00 CRITICAL Uncaught Error: Function name must be a string in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:77
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_action('woocommerc в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 77
+
+2022-02-27T17:56:05+00:00 CRITICAL Uncaught Error: Function name must be a string in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:77
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_action('woocommerc в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 77
+
+2022-02-27T20:54:33+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:58
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 58
+
+2022-02-27T20:54:34+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:58
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 58
+
+2022-02-27T20:55:36+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:60
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 60
+
+2022-02-27T20:55:37+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:60
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 60
+
+2022-02-27T20:56:07+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:60
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 60
+
+2022-02-27T20:56:08+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:60
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 60
+
+2022-02-27T20:58:55+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:60
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 60
+
+2022-02-27T20:58:56+00:00 CRITICAL Uncaught Error: Call to a member function get_name() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:60
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_acti в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 60
+
+2022-02-27T21:03:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_image() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:57
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.p в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 57
+
+2022-02-27T21:03:17+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order_Item_Product::get_image() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:57
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(0)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.p в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 57
+
+2022-02-27T21:18:32+00:00 CRITICAL require(): Failed opening required 'aside.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/templates/collections.php на строке 12
+
+2022-02-27T21:32:57+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on null in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php:57
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(3182): wc_get_template('myaccount/order...', Array)
+#2 [internal function]: woocommerce_account_orders(1)
+#3 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(307): call_user_func_array('woocommerce_acc...', Array)
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#6 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(91): do_ в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/orders.php на строке 57
+

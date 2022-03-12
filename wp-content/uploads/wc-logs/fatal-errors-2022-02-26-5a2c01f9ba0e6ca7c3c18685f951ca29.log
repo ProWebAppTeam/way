@@ -1,0 +1,49 @@
+2022-02-26T19:50:43+00:00 CRITICAL Uncaught Error: Call to undefined function edit_address() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php:45
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#2 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#3 [internal function]: WC_Shortcode_My_Account::output('')
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): call_user_func(Array, '')
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Ar в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php на строке 45
+
+2022-02-26T19:51:41+00:00 CRITICAL Uncaught Error: Call to undefined function edit_address() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php:45
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#2 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#3 [internal function]: WC_Shortcode_My_Account::output('')
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): call_user_func(Array, '')
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Ar в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php на строке 45
+
+2022-02-26T19:54:38+00:00 CRITICAL Uncaught Error: Call to undefined function edit_address() in /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php:45
+Stack trace:
+#0 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(123): wc_get_template('myaccount/my-ac...', Array)
+#2 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-my-account.php(72): WC_Shortcode_My_Account::my_account('')
+#3 [internal function]: WC_Shortcode_My_Account::output('')
+#4 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(72): call_user_func(Array, '')
+#5 /home/m/manufae1/wayuchoose.com/public_html/wp-content/plugins/woocommerce/includes/class-wc-shortcodes.php(115): WC_Shortcodes::shortcode_wrapper(Ar в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/myaccount/my-account.php на строке 45
+
+2022-02-26T21:37:25+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions_account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:37:26+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions_account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:38:59+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:00+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:04+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:05+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:06+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:15+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:15+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:20+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
+2022-02-26T21:39:21+00:00 CRITICAL require(): Failed opening required '/home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/woocommerce/includes/wc_functions-account.php' (include_path='.:/usr/share/php') в /home/m/manufae1/wayuchoose.com/public_html/wp-content/themes/WayTheme/functions.php на строке 77
+
