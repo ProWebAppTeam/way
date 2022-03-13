@@ -1,0 +1,22 @@
+header {
+    position: relative;
+    top: 30px;
+    margin: 0 120px;
+
+    .top-row {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .top-row_logo {
+
+        }
+
+        .top-row_right-block {
+             .top-row_right-block_search {}
+        }
+    }
+}
